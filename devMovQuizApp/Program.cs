@@ -21,10 +21,17 @@ namespace devMovQuizApp
                 "Q5) The Enlightenment was an intellectual movement that celebrated religious faith over reason."
                 };
             string[] answers = { "false", "false", "true", "false", "false" };
-            foreach (string i in questions)
+            for (int i =0; i<5; i++)
             {
-                Console.WriteLine(i);
-                Console.ReadLine();
+                Console.WriteLine(questions[i]);
+                attempt = Console.ReadLine();
+                if (attempt.Equals(answers[i], StringComparison.InvariantCultureIgnoreCase))
+                {
+
+                } else
+                {
+
+                }
             };
         }
     }

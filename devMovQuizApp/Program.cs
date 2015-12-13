@@ -23,14 +23,16 @@ namespace devMovQuizApp
             string[] answers = { "false", "false", "true", "false", "false" };
             for (int i =0; i<5; i++)
             {
+                Console.WriteLine("Your current score is " + score);
                 Console.WriteLine(questions[i]);
                 attempt = Console.ReadLine();
                 if (attempt.Equals(answers[i], StringComparison.InvariantCultureIgnoreCase))
                 {
-
+                    score++;
+                    Console.WriteLine("Correct!");
                 } else
                 {
-
+                    Console.WriteLine("Incorrect.");
                 }
             };
         }
